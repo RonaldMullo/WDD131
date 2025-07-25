@@ -1,4 +1,4 @@
-/* Variables CSS */
+
 :root {
     --pri: #4a6fa5;
     --sec: #166088;
@@ -8,7 +8,7 @@
     --nav: #fff;
 }
 
-/* Estilos base */
+
 * {
     margin: 0;
     padding: 0;
