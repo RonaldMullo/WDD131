@@ -1,35 +1,75 @@
 /* móvil (<600px) */
 @media (max-width: 600px) {
+    .banner {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .banner-img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .overlay-content {
+        position: relative;
+        margin-top: 20px;
+        padding: 15px;
+        background: rgba(255, 255, 255, 0.9);
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
     .overlay-content h1 {
         font-size: 2rem;
         text-align: center;
         margin-bottom: 10px;
+        color: #333; /* Asegurar legibilidad */
     }
-
+    
     h2 {
         font-size: 1.5rem;
+        color: #333; /* Asegurar legibilidad */
     }
-
+    
     .weather-icon {
         display: block;
         text-align: center;
         margin: 15px 0;
     }
-
+    
     .weather-icon::before {
         content: url('images/climate.svg');
         width: 40px;
         height: 40px;
     }
-
+    
     .cards-container {
         flex-direction: column;
         align-items: center;
         gap: 20px;
     }
-
+    
     .cards-container .card {
         width: 90%;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    
+    footer {
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+        background: #f5f5f5;
+        width: 100%;
+    }
+    
+    footer p {
+        margin: 5px 0;
+        color: #333;
+        font-size: 0.9rem;
     }
 }
 
