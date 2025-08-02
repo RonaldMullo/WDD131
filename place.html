@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecuador - Información Turística</title>
+    <meta name="description" content="Información esencial sobre Ecuador">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/media-queries.css">
+</head>
+<body>
+    <header>
+        <h1>ECUADOR</h1>
+        <div class="banner">
+            <picture>
+                <source srcset="images/turtle.webp" media="(max-width: 600px)">
+                <img src="images/tortuga.webp" alt="Paisajes de Ecuador" class="banner-img">
+            </picture>
+        </div>
+    </header>
+
+    <main>
+        <section class="data-section">
+            <h2>DATA</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">Area:</span>
+                    <span class="value">283,561 km²</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Capital:</span>
+                    <span class="value">Quito</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">US Dollar (USD)</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+593</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="weather-section">
+            <h2>WEATHER</h2>
+            <div class="weather-icon" id="weather-icon"></div>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">Population:</span>
+                    <span class="value">17.8 million</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">UTC-5</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Internet TLD:</span>
+                    <span class="value">.ec</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Wind Chill:</span>
+                    <span class="value" id="wind-chill">N/A</span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="current-year"></span> ❤ Ronald Edgardo Mullo Culquicondor ❤ Ecuador</p>
+        <p>Last Modification: <span id="last-modified"></span></p>
+    </footer>
+
+    <script src="scripts/place.js" defer></script>
+</body>
+</html>

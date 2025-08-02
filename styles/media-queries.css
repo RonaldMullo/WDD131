@@ -1,0 +1,43 @@
+/* móvil (<600px) */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    .weather-icon {
+        display: block;
+        text-align: center;
+        margin: 15px 0;
+    }
+    
+    .weather-icon::before {
+        content: url('images/climate');
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* desktop (≥1160px) */
+@media (min-width: 1160px) {
+    main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .card {
+        width: 48%;
+    }
+    
+    .weather-section h2::after {
+        content: " ⛅";
+        margin-left: 10px;
+    }
+    
+    .info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
