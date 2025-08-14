@@ -1,0 +1,324 @@
+/* Global Styles */
+:root {
+    --primary-color: #353d53;
+    --secondary-color: #166088;
+    --accent-color: #4fc3f7;
+    --text-color: #4e6ab8;
+    --light-bg: #f5f9ff;
+    --white: #ffffff;
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}   
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--light-bg);
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+    position: relative;
+}
+
+.header-logo {
+    position: absolute;
+    top: 1.5rem;    
+    left: 1.5rem; 
+    z-index: 1000;
+}
+
+.header-logo img {
+    width: 80px;    
+    height: auto;
+    
+}
+
+
+header {
+    position: relative; 
+}
+
+.logo h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.logo p {
+    font-style: italic;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 1rem;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    min-height: calc(100vh - 200px);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+/* Home Page Styles */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/pic1.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    padding: 0 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Services Page Styles */
+.service {
+    background-color: var(--white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.service h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.service p {
+    margin-bottom: 1rem;
+}
+
+.signature {
+    font-style: italic;
+    text-align: right;
+    margin-top: 1.5rem;
+}
+
+.profile-image {
+    text-align: center;
+    margin: 20px 0;
+}
+.profile-image img {
+    width: 300px; /* Ajusta el tamaño */
+    height: 300px;
+    border-radius: 50%; /* Formato circular */
+    object-fit: cover; /* Evita deformaciones */
+    border: 3px solid #4a90e2; /* Borde opcional */
+}
+
+/* Profile Page Styles */
+.profile {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.profile h1 {
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.profile h2 {
+    color: var(--secondary-color);
+    margin: 1.5rem 0 1rem;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+}
+
+.profile h3 {
+    color: var(--primary-color);
+    margin: 1rem 0;
+    font-size: 1.3rem;
+}
+
+/* Contact Page Styles */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.contact-info {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+.contact-info h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+.contact-info h3 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.social-media a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    transition: color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.social-media a:hover {
+    color: var(--accent-color);
+}
+
+form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+}
+
+form h3 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+    
+    .hero h2 {
+        font-size: 2rem;
+    }
+    
+    .service, .profile, .contact-info, form {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo h1 {
+        font-size: 1.5rem;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .service h2, .profile h1 {
+        font-size: 1.3rem;
+    }
+}
